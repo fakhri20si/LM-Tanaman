@@ -37,7 +37,7 @@ class UserController extends Controller
         if (auth()->check()) {
             $validatedData['user_id'] = auth()->user()->id;
         } else {
-            return redirect('/')->with('error', 'Mohon Login Untuk Menambahkan Data User');
+            return redirect('/login')->with('error', 'Mohon Login Untuk Menambahkan Data User');
         }
 
 

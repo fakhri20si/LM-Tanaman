@@ -167,7 +167,7 @@
 
         </tbody>
       </table>
-      <div class="float-end">
+      <div class="float-end p-3">
           {{ $users->links() }}
       </div>
 

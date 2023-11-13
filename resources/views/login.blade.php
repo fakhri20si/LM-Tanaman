@@ -45,7 +45,7 @@
                 class="img-fluid" alt="Sample image">
             </div>
             <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-                <form action="/" method="POST">
+                <form action="/login" method="POST">
                   @csrf   
                 <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-center">
                   <p><img src="logo.png" alt="PTPN V" width="100"></p><br>
