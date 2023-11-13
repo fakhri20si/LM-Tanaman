@@ -35,7 +35,7 @@ class LoginController extends Controller
         if ($user) {
             if (auth()->user()->is_admin) {
 
-                return redirect('/users')->with('loginSuccess', 'Login berhasil!');
+                return redirect()->route('users.index')->with('loginSuccess', 'Login berhasil!');
             } else {
 
                 Auth::logout();
