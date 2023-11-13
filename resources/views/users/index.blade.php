@@ -58,27 +58,21 @@
     </h5>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-          // Temukan semua tombol edit dengan kelas .edit-user
           const editButtons = document.querySelectorAll('.edit-user');
   
-          // Iterasi melalui setiap tombol edit
           editButtons.forEach(function (button) {
               button.addEventListener('click', function () {
-                  // Dapatkan data dari atribut data
+
                   const userId = this.getAttribute('data-user-id');
                   const userName = this.getAttribute('data-user-name');
                   const userNik = this.getAttribute('data-user-nik');
   
-                  // Temukan formulir modal berdasarkan ID yang sesuai
                   const modalId = `#modalCenter2_${userId}`;
                   const modal = document.querySelector(modalId);
   
-                  // Isi formulir modal dengan data yang sesuai
                   modal.querySelector('#name').value = userName;
                   modal.querySelector('#nik').value = userNik;
-                  // ... Isi elemen formulir lainnya sesuai kebutuhan ...
   
-                  // Tampilkan modal
                   new bootstrap.Modal(modal).show();
               });
           });
